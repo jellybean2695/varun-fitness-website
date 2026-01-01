@@ -1,0 +1,286 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    padding-top: 90px; /* fixed navbar fix */
+}
+
+/* Navbar */
+.custom-nav {
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.logo {
+    width: 120px;
+}
+
+/* Announcement Bar */
+.offer-bar {
+    position: fixed;
+    top: 70px; /* below navbar */
+    width: 100%;
+    background: #9eff00;
+    color: #000;
+    overflow: hidden;
+    z-index: 999;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.offer-text {
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: 1rem;
+    animation: scrollText 15s linear infinite;
+    padding-left: 100%;
+}
+
+/* Scrolling Animation */
+@keyframes scrollText {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Hero */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url('../images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 120px;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: #9eff00;
+}
+
+/* Sections */
+.section-dark {
+    padding: 80px 0;
+    background-color: #000;
+}
+
+.section-light {
+    padding: 80px 0;
+    background-color: #f5f5f5;
+}
+
+.section-title {
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+/* Features */
+.feature-box {
+    padding: 25px;
+    text-align: center;
+    border: 1px solid #9eff00;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.3s ease; /* smooth hover */
+    cursor: pointer;
+}
+
+.feature-box:hover {
+    background-color: #9eff00;
+    color: #000;
+    transform: translateY(-6px); /* subtle lift */
+    box-shadow: 0 10px 25px rgba(158, 255, 0, 0.4);
+}
+
+/* Plans */
+.plan-card {
+    background: #111;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.new-price {
+    font-size: 2rem;
+    color: #9eff00;
+    font-weight: bold;
+}
+
+.offer-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #9eff00;
+    color: #000;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+
+}
+/* Make timing boxes equal height */
+.timing-row {
+    display: flex;
+    align-items: stretch;
+}
+
+
+
+.timing-box {
+    background: #111;
+    padding: 35px;
+    border-radius: 12px;
+    border: 1px solid #9eff00;
+    transition: transform 0.3s ease;
+    width: 100%;
+    min-height: 320px; /* Adjust if you want taller */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.timing-box:hover {
+    transform: translateY(-5px);
+}
+
+.timing-box h4 {
+    color: #9eff00;
+    margin-bottom: 15px;
+}
+
+.timing-highlight {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #9eff00;
+}
+
+.closed-text {
+    color: #ccc;
+    font-style: italic;
+}
+
+
+/* Contact */
+.contact-box {
+    background: #fff;
+    color: #000;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+    background: #000;
+    padding: 20px;
+    border-top: 1px solid #9eff00;
+}
+/* Training Programs */
+.program-card {
+    background: #111;
+    padding: 35px 25px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid #9eff00;
+    height: 100%;
+    transition: all 0.35s ease;
+    cursor: pointer;
+}
+
+.program-card h4 {
+    color: #9eff00;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.program-card p {
+    color: #ccc;
+    font-size: 0.95rem;
+}
+
+/* Hover Effect */
+.program-card:hover {
+    background-color: #9eff00;
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 35px rgba(158, 255, 0, 0.45);
+}
+
+.program-card:hover h4,
+.program-card:hover p {
+    color: #000;
+}
+/* ===== REGISTRATION PAGE ===== */
+
+.register-section {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+                url('../assets/images/gym-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 120px;
+}
+
+.register-card {
+    background: #111;
+    padding: 40px 35px;
+    border-radius: 15px;
+    border: 1px solid #9eff00;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+.register-card h2 {
+    color: #9eff00;
+    font-weight: 700;
+}
+
+.form-label {
+    color: #ccc;
+    font-weight: 500;
+}
+
+.form-control,
+.form-select {
+    background-color: #000;
+    border: 1px solid #555;
+    color: #fff;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #9eff00;
+    box-shadow: none;
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-success {
+    background-color: #9eff00;
+    border: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.btn-success:hover {
+    background-color: #b6ff33;
+    color: #000;
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Varun Fitness Center</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../gym_css/gym.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-nav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#home">
+                <img src="../gym_assets/image copy 21.png" alt="Logo" class="logo">
+                <span class="ms-2">Varun Fitness Center</span>
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+
+                    <!-- UPDATED: Trainers → Programs -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#programs">Programs</a>
+                    </li>
+
+                    <!-- UPDATED: Register links to registration.html -->
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-success text-dark" href="../gym_html/registry.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== ANNOUNCEMENT BAR ===== -->
+    <div class="offer-bar">
+        <div class="offer-text">
+            🔥 Hurry! Limited-Time Fitness Offer — Join Before It Ends! 🔥
+        </div>
+    </div>
+
+    <!-- ================= HERO ================= -->
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="container text-center">
+            <h1 class="hero-title">Transform Your Body</h1>
+            <p class="hero-subtitle">Train Strong. Stay Fit. Live Healthy.</p>
+
+            <!-- UPDATED -->
+            <a href="../gym_html/registry.html" class="btn btn-success btn-lg mt-3">Join Now</a>
+        </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="section-dark">
+        <div class="container">
+            <h2 class="section-title text-center">Why Choose Us</h2>
+
+            <div class="row mt-4">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="feature-box">Certified Trainers</div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="feature-box">Free Diet Plan</div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="feature-box">Modern Equipment</div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="feature-box">Flexible Workout Timings</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PLANS ================= -->
+    <section class="section-light">
+        <div class="container">
+            <h2 class="section-title text-center text-dark">Membership Plans</h2>
+
+            <div class="row mt-4">
+                <div class="col-md-4 mb-4">
+                    <div class="plan-card">
+                        <h4>Monthly</h4>
+                        <p class="old-price">₹1500</p>
+                        <p class="new-price">₹999</p>
+                        <span class="offer-badge">New Year Offer</span>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="plan-card">
+                        <h4>Half Yearly</h4>
+                        <p class="old-price">₹8000</p>
+                        <p class="new-price">₹4999</p>
+                        <span class="offer-badge">New Year Offer</span>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="plan-card">
+                        <h4>Yearly</h4>
+                        <p class="old-price">₹14000</p>
+                        <p class="new-price">₹6699</p>
+                        <span class="offer-badge">New Year Offer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= GYM TIMINGS ================= -->
+    <section class="section-dark" id="timings">
+        <div class="container">
+            <h2 class="section-title text-center">Gym Timings</h2>
+
+            <div class="row justify-content-center mt-5 timing-row">
+
+                <div class="col-md-5 mb-4">
+                    <div class="timing-box text-center">
+                        <h4>Monday – Friday</h4>
+                        <p>Morning</p>
+                        <p class="timing-highlight">5:00 AM – 12:00 PM</p>
+                        <p>Evening</p>
+                        <p class="timing-highlight">5:00 PM – 10:00 PM</p>
+                    </div>
+                </div>
+
+                <div class="col-md-5 mb-4">
+                    <div class="timing-box text-center">
+                        <h4>Sunday</h4>
+                        <p>Morning</p>
+                        <p class="timing-highlight">6:00 AM – 10:00 AM</p>
+                        <p class="closed-text">Evening Closed</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= TRAINING PROGRAMS ================= -->
+    <section id="programs" class="section-dark">
+        <div class="container">
+            <h2 class="section-title text-center">Our Training Programs</h2>
+
+            <div class="row mt-5 justify-content-center">
+
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="program-card">
+                        <h4>Weight Loss</h4>
+                        <p>High-intensity workouts focused on burning fat and improving stamina.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="program-card">
+                        <h4>Muscle Gain</h4>
+                        <p>Structured strength training plans for lean muscle growth.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="program-card">
+                        <h4>Strength Training</h4>
+                        <p>Powerlifting & compound movements to build raw strength.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="program-card">
+                        <h4>Beginner Program</h4>
+                        <p>Perfect for newcomers with guided workouts and form correction.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="program-card">
+                        <h4>Cardio & Fat Burn</h4>
+                        <p>Endurance-focused sessions to boost heart health.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section-light">
+        <div class="container">
+            <h2 class="section-title text-center text-dark">Contact Us</h2>
+
+            <div class="contact-box mt-4">
+                <p><strong>Address:</strong> near Annapurnagar bus stop, Annapurna Nagar, Gita Residency, Bank Colony,
+                    Uppal, Hyderabad, Telangana 500039.</p>
+                <p><strong>Phone:</strong> +91 92933 27678, +91 99664 26346</p>
+                <p><strong>Instagram:</strong> @ranadhira_rd @yadagiri.medi</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer text-center">
+        <p>© 2026 Varun Fitness Center. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
